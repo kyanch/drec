@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="DataDrag" name="centralwidget"/>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
@@ -23,9 +23,23 @@
      <height>37</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuDREC">
+    <property name="title">
+     <string>DREC</string>
+    </property>
+   </widget>
+   <addaction name="menuDREC"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>DataDrag</class>
+   <extends>QWidget</extends>
+   <header>datadrag.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
